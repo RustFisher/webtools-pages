@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
+    <script>
+      (() => {
+        let theme = 'dark';
+        try { theme = localStorage.getItem('webtools-theme') === 'light' ? 'light' : 'dark'; } catch {}
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Base64 编码解码工具 - WebTools</title>
+    <title>Base64 Encoder / Decoder - WebTools</title>
     <!-- <script defer src="https://cloud.umami.is/script.js" data-website-id="c0171030-787e-4938-b2d7-06bdb9f304b8"></script> -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZPQFF2QZ0"></script>
     <script>
@@ -13,10 +21,10 @@
 
       gtag('config', 'G-PZPQFF2QZ0');
     </script>
-    <script type="module" crossorigin src="../assets/base64-CCSKsoVf.js"></script>
-    <link rel="modulepreload" crossorigin href="../assets/main-BpQ-vp6w.js">
-    <link rel="stylesheet" crossorigin href="../assets/main-DdfP4N59.css">
-    <link rel="stylesheet" crossorigin href="../assets/base64-CTJ4-Gjo.css">
+    <script type="module" crossorigin src="../assets/base64-BRduJOxI.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/main-BvXwwd-y.js">
+    <link rel="stylesheet" crossorigin href="../assets/main-DGCzffvp.css">
+    <link rel="stylesheet" crossorigin href="../assets/base64-BrfWcIpV.css">
   </head>
   <body>
     <div id="app"></div>

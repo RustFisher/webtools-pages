@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="description" content="Format, validate and minify JSON online. Explore nested data in a tree view and adjust indentation. JSON processing runs locally in your browser.">
+    <link rel="canonical" href="https://webtools.rustfisher.com/json/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WebTools">
+    <meta property="og:title" content="JSON Formatter, Validator &amp; Minifier Online | WebTools">
+    <meta property="og:description" content="Format, validate and minify JSON online. Explore nested data in a tree view and adjust indentation. JSON processing runs locally in your browser.">
+    <meta property="og:url" content="https://webtools.rustfisher.com/json/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="JSON Formatter, Validator &amp; Minifier Online | WebTools">
+    <meta name="twitter:description" content="Format, validate and minify JSON online. Explore nested data in a tree view and adjust indentation. JSON processing runs locally in your browser.">
+
     <script>
       (() => {
         let theme = 'dark';
@@ -13,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <meta name="theme-color" content="#1767ff" />
-    <title>JSON Formatter - WebTools</title>
+    <title>JSON Formatter, Validator &amp; Minifier Online | WebTools</title>
     <!-- <script defer src="https://cloud.umami.is/script.js" data-website-id="c0171030-787e-4938-b2d7-06bdb9f304b8"></script> -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZPQFF2QZ0"></script>
     <script>
@@ -23,9 +34,9 @@
 
       gtag('config', 'G-PZPQFF2QZ0');
     </script>
-    <script type="module" crossorigin src="../assets/json-DFqFQ8l4.js"></script>
-    <link rel="modulepreload" crossorigin href="../assets/main-FrUVw3BK.js">
-    <link rel="modulepreload" crossorigin href="../assets/JsonFormatView-wVI3T3uC.js">
+    <script type="module" crossorigin src="../assets/json-By5Awnm_.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/main-DGbqnp23.js">
+    <link rel="modulepreload" crossorigin href="../assets/JsonFormatView-sHity6gV.js">
     <link rel="stylesheet" crossorigin href="../assets/main-DGCzffvp.css">
     <link rel="stylesheet" crossorigin href="../assets/JsonFormatView-bHLYtrf6.css">
     <link rel="stylesheet" crossorigin href="../assets/json-DCVbeUOe.css">
@@ -36,6 +47,18 @@
     })(window, document, "clarity", "script", "yxziif07qc");</script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app"><div class="json-page" data-v-7cd3ba0e><header class="header" data-v-7cd3ba0e><a class="logo" href="../" data-v-7cd3ba0e><div class="logo-mark" data-v-7cd3ba0e></div><span data-v-7cd3ba0e>WebTools</span></a><div class="actions" data-v-7cd3ba0e><button class="theme-switcher" type="button" title="Switch to light mode" aria-label="Switch to light mode" data-v-7cd3ba0e data-v-8a827b0d><svg viewBox="0 0 24 24" aria-hidden="true" data-v-8a827b0d><circle cx="12" cy="12" r="4" data-v-8a827b0d></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" data-v-8a827b0d></path></svg></button><label class="language-switcher" data-v-7cd3ba0e data-v-1568d5fa><span data-v-1568d5fa>Language</span><select value="en" aria-label="Language" data-v-1568d5fa><option value="en" lang="en" data-v-1568d5fa>English</option><option value="zh-CN" lang="zh-CN" data-v-1568d5fa>简体中文</option></select></label></div></header><main class="main" data-v-7cd3ba0e><!--[--><section class="tool-hero" data-v-1d8567cf><!-- <a class="back-link" href="../">{{ t('← 返回首页') }}</a> --><div class="title-wrap" data-v-1d8567cf><div class="title-icon" data-v-1d8567cf>{ }</div><div data-v-1d8567cf><p class="eyebrow" data-v-1d8567cf>JSON FORMATTER</p><h1 data-v-1d8567cf>JSON Formatter</h1><p class="subtitle" data-v-1d8567cf>Format, minify and validate JSON, with immediate syntax error feedback.</p></div></div></section><section class="tool-card" data-v-1d8567cf><div class="toolbar" data-v-1d8567cf><div class="toolbar-left" data-v-1d8567cf><button class="primary" type="button" data-v-1d8567cf>Format</button><button type="button" data-v-1d8567cf>Minify</button><button type="button" data-v-1d8567cf>Validate</button><button type="button" data-v-1d8567cf>Copy Result</button></div><div class="toolbar-right" data-v-1d8567cf><label data-v-1d8567cf>Indent <select data-v-1d8567cf><option value="2" data-v-1d8567cf selected>2 spaces</option><option value="4" data-v-1d8567cf>4 spaces</option></select></label><button type="button" data-v-1d8567cf>Sample</button><button class="ghost-danger" type="button" data-v-1d8567cf>Clear</button></div></div><div class="ready status" data-v-1d8567cf><span class="status-dot" data-v-1d8567cf></span> Paste JSON and click Format. All processing happens locally in your browser.</div><div class="editor-grid" data-v-1d8567cf><!-- 左侧输入面板 --><div class="panel" data-v-1d8567cf><div class="panel-head" data-v-1d8567cf><span data-v-1d8567cf>Input JSON</span><small data-v-1d8567cf>13 lines · 171 characters</small></div><div class="editor-body" data-v-1d8567cf><div class="line-numbers" aria-hidden="true" data-v-1d8567cf><!--[--><span data-v-1d8567cf>1</span><span data-v-1d8567cf>2</span><span data-v-1d8567cf>3</span><span data-v-1d8567cf>4</span><span data-v-1d8567cf>5</span><span data-v-1d8567cf>6</span><span data-v-1d8567cf>7</span><span data-v-1d8567cf>8</span><span data-v-1d8567cf>9</span><span data-v-1d8567cf>10</span><span data-v-1d8567cf>11</span><span data-v-1d8567cf>12</span><span data-v-1d8567cf>13</span><!--]--></div><textarea spellcheck="false" placeholder="Paste JSON here..." data-v-1d8567cf>{
+  &quot;name&quot;: &quot;WebTools&quot;,
+  &quot;features&quot;: [
+    &quot;format&quot;,
+    &quot;compress&quot;,
+    &quot;validate&quot;
+  ],
+  &quot;localOnly&quot;: true,
+  &quot;meta&quot;: {
+    &quot;theme&quot;: &quot;dark-tech&quot;,
+    &quot;version&quot;: 1
+  }
+}</textarea></div></div><!-- 右侧结果面板 --><div class="panel output-panel" data-v-1d8567cf><div class="panel-head" data-v-1d8567cf><div class="panel-head-left" data-v-1d8567cf><span data-v-1d8567cf>Formatted Output</span><small data-v-1d8567cf>0 lines · 0 characters</small></div><div class="panel-head-right" data-v-1d8567cf><!-- 折叠层级控制（在树形视图且有数据时显示） --><!----><!-- 视图模式切换 --><div class="view-switch" data-v-1d8567cf><button type="button" class="active switch-tab" data-v-1d8567cf>Tree View</button><button type="button" class="switch-tab" data-v-1d8567cf>Text View</button></div></div></div><div class="editor-body" data-v-1d8567cf><!-- 纯文本代码视图（或无数据时） --><!--[--><div class="line-numbers" aria-hidden="true" data-v-1d8567cf><!--[--><span data-v-1d8567cf>1</span><!--]--></div><pre class="empty output" data-v-1d8567cf>Click Format to see the result here</pre><!--]--></div></div></div></section><section class="feature-strip" data-v-1d8567cf><div data-v-1d8567cf><b data-v-1d8567cf>Local Processing</b><span data-v-1d8567cf>Your input is never uploaded</span></div><div data-v-1d8567cf><b data-v-1d8567cf>Instant Validation</b><span data-v-1d8567cf>Get immediate error feedback</span></div><div data-v-1d8567cf><b data-v-1d8567cf>One-click Copy</b><span data-v-1d8567cf>Ready to copy and use</span></div></section><!--]--></main><footer class="footer" data-v-7cd3ba0e>© RustFisher WebTools. All rights reserved.</footer></div></div>
   </body>
 </html>

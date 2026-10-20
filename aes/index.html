@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="description" content="Encrypt and decrypt text with AES-GCM in your browser. Configure your secret and initialization vector using the free WebTools AES tool.">
+    <link rel="canonical" href="https://webtools.rustfisher.com/aes/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WebTools">
+    <meta property="og:title" content="AES-GCM Encryption &amp; Decryption Online | WebTools">
+    <meta property="og:description" content="Encrypt and decrypt text with AES-GCM in your browser. Configure your secret and initialization vector using the free WebTools AES tool.">
+    <meta property="og:url" content="https://webtools.rustfisher.com/aes/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="AES-GCM Encryption &amp; Decryption Online | WebTools">
+    <meta name="twitter:description" content="Encrypt and decrypt text with AES-GCM in your browser. Configure your secret and initialization vector using the free WebTools AES tool.">
+
     <script>
       (() => {
         let theme = 'dark';
@@ -13,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <meta name="theme-color" content="#1767ff" />
-    <title>AES Encryption / Decryption - WebTools</title>
+    <title>AES-GCM Encryption &amp; Decryption Online | WebTools</title>
     <!-- <script defer src="https://cloud.umami.is/script.js" data-website-id="c0171030-787e-4938-b2d7-06bdb9f304b8"></script> -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZPQFF2QZ0"></script>
     <script>
@@ -23,9 +34,9 @@
 
       gtag('config', 'G-PZPQFF2QZ0');
     </script>
-    <script type="module" crossorigin src="../assets/aes-bRuCQfhr.js"></script>
-    <link rel="modulepreload" crossorigin href="../assets/main-FrUVw3BK.js">
-    <link rel="modulepreload" crossorigin href="../assets/AesView-DVoDEIjz.js">
+    <script type="module" crossorigin src="../assets/aes-BKHk9fFL.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/main-DGbqnp23.js">
+    <link rel="modulepreload" crossorigin href="../assets/AesView-BRo3juoH.js">
     <link rel="stylesheet" crossorigin href="../assets/main-DGCzffvp.css">
     <link rel="stylesheet" crossorigin href="../assets/AesView-Dh8_lfeS.css">
     <link rel="stylesheet" crossorigin href="../assets/aes-CJFqSHJP.css">
@@ -36,6 +47,7 @@
     })(window, document, "clarity", "script", "yxziif07qc");</script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app"><div class="aes-page" data-v-b2625320><header class="header" data-v-b2625320><a class="logo" href="../" data-v-b2625320><div class="logo-mark" data-v-b2625320></div><span data-v-b2625320>WebTools</span></a><div class="actions" data-v-b2625320><button class="theme-switcher" type="button" title="Switch to light mode" aria-label="Switch to light mode" data-v-b2625320 data-v-8a827b0d><svg viewBox="0 0 24 24" aria-hidden="true" data-v-8a827b0d><circle cx="12" cy="12" r="4" data-v-8a827b0d></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" data-v-8a827b0d></path></svg></button><label class="language-switcher" data-v-b2625320 data-v-1568d5fa><span data-v-1568d5fa>Language</span><select value="en" aria-label="Language" data-v-1568d5fa><option value="en" lang="en" data-v-1568d5fa>English</option><option value="zh-CN" lang="zh-CN" data-v-1568d5fa>简体中文</option></select></label></div></header><main class="main" data-v-b2625320><!--[--><section class="tool-hero" data-v-39b1544b><div class="title-wrap" data-v-39b1544b><div class="title-icon" data-v-39b1544b>AES</div><div data-v-39b1544b><p class="eyebrow" data-v-39b1544b>AES-GCM TOOL</p><h1 data-v-39b1544b>AES Encryption / Decryption</h1><p class="subtitle" data-v-39b1544b>Encrypt and decrypt text locally with AES-GCM using the Web Crypto API.</p></div></div></section><section class="tool-card" data-v-39b1544b><div class="secret-row" data-v-39b1544b><label for="aes-password" data-v-39b1544b>Password</label><div class="password-field" data-v-39b1544b><input id="aes-password" value="web-tools-demo-key" type="password" autocomplete="off" placeholder="Enter a password for encryption / decryption" data-v-39b1544b><button class="password-toggle" type="button" aria-label="Show password" data-v-39b1544b>Show</button></div><span data-v-39b1544b>The password is hashed with SHA-256 to create a 256-bit AES key</span></div><div class="mode-row" data-v-39b1544b><span data-v-39b1544b>Key Handling</span><label data-v-39b1544b><input checked type="radio" value="sha256" data-v-39b1544b> SHA-256 derivation</label><label data-v-39b1544b><input type="radio" value="raw" data-v-39b1544b> Raw key</label></div><div class="mode-row" data-v-39b1544b><span data-v-39b1544b>IV Settings</span><label data-v-39b1544b><input checked type="radio" value="auto" data-v-39b1544b> Generate randomly</label><label data-v-39b1544b><input type="radio" value="manual" data-v-39b1544b> Enter manually</label></div><!----><div class="toolbar" data-v-39b1544b><div class="toolbar-left" data-v-39b1544b><button class="primary" type="button" data-v-39b1544b>Encrypt</button><button type="button" data-v-39b1544b>Decrypt</button></div><div class="toolbar-right" data-v-39b1544b><button type="button" data-v-39b1544b>Sample</button><button type="button" data-v-39b1544b>Swap</button><button type="button" data-v-39b1544b>Copy Result</button><button class="ghost-danger" type="button" data-v-39b1544b>Clear</button></div></div><div class="ready status" data-v-39b1544b><span class="status-dot" data-v-39b1544b></span> Enter plain text or AES ciphertext JSON and a password to get started.</div><div class="editor-grid" data-v-39b1544b><div class="panel" data-v-39b1544b><div class="panel-head" data-v-39b1544b><span data-v-39b1544b>Input</span><small data-v-39b1544b>2 lines · 84 characters</small></div><div class="editor-body" data-v-39b1544b><div class="line-numbers" aria-hidden="true" data-v-39b1544b><!--[--><span data-v-39b1544b>1</span><span data-v-39b1544b>2</span><!--]--></div><textarea spellcheck="false" placeholder="Enter plain text or paste AES ciphertext JSON..." data-v-39b1544b>This is a message to encrypt.
+AES-GCM encrypts and decrypts locally in your browser.</textarea></div></div><div class="panel output-panel" data-v-39b1544b><div class="panel-head" data-v-39b1544b><span data-v-39b1544b>Output</span><small data-v-39b1544b>0 lines · 0 characters</small></div><div class="editor-body" data-v-39b1544b><div class="line-numbers" aria-hidden="true" data-v-39b1544b><!--[--><span data-v-39b1544b>1</span><!--]--></div><pre class="empty output" data-v-39b1544b>Click Encrypt or Decrypt to see the result here</pre></div></div></div></section><section class="feature-strip" data-v-39b1544b><div data-v-39b1544b><b data-v-39b1544b>AES-GCM</b><span data-v-39b1544b>Encryption with integrity verification</span></div><div data-v-39b1544b><b data-v-39b1544b>Random IV</b><span data-v-39b1544b>A new 12-byte IV for each encryption</span></div><div data-v-39b1544b><b data-v-39b1544b>Local Processing</b><span data-v-39b1544b>Your text and password are never uploaded</span></div></section><!--]--></main><footer class="footer" data-v-b2625320>© RustFisher WebTools. All rights reserved.</footer></div></div>
   </body>
 </html>

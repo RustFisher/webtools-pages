@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Web-based serial terminal for hardware debugging. Supports ASCII ANSI terminal, HEX byte dump, sequence manager, DTR/RTS signals, and auto-repeat send based on Web Serial API.">
+    <link rel="canonical" href="https://webtools.rustfisher.com/serial/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MiniTools">
+    <meta property="og:title" content="Web Serial Terminal Online: Hardware Debugger | MiniTools">
+    <meta property="og:description" content="Web-based serial terminal for hardware debugging. Supports ASCII ANSI terminal, HEX byte dump, sequence manager, DTR/RTS signals, and auto-repeat send based on Web Serial API.">
+    <meta property="og:url" content="https://webtools.rustfisher.com/serial/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Web Serial Terminal Online: Hardware Debugger | MiniTools">
+    <meta name="twitter:description" content="Web-based serial terminal for hardware debugging. Supports ASCII ANSI terminal, HEX byte dump, sequence manager, DTR/RTS signals, and auto-repeat send based on Web Serial API.">
+
+    <script>
+      (() => {
+        let theme = 'dark';
+        try { theme = localStorage.getItem('webtools-theme') === 'light' ? 'light' : 'dark'; } catch {}
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#1767ff" />
+    <title>Web Serial Terminal Online: Hardware Debugger | MiniTools</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZPQFF2QZ0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PZPQFF2QZ0');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7286632197002340"
+      crossorigin="anonymous"></script>
+    <script type="module" crossorigin src="../assets/serial-Ca7fiuKk.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/main-C8eMT4H0.js">
+    <link rel="modulepreload" crossorigin href="../assets/AdSenseBanner-B1ohPICY.js">
+    <link rel="modulepreload" crossorigin href="../assets/analytics-lNAAcqpJ.js">
+    <link rel="modulepreload" crossorigin href="../assets/preload-helper-B7qeedMF.js">
+    <link rel="stylesheet" crossorigin href="../assets/main-Diy0_TMl.css">
+    <link rel="stylesheet" crossorigin href="../assets/AdSenseBanner-cAuRBdc2.css">
+    <link rel="stylesheet" crossorigin href="../assets/serial-BQJ-gOKL.css">
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yxziif07qc");</script>
+  </head>
+  <body>
+    <div id="app"><div class="serial-page" data-v-91ee0b86><header class="header" data-v-91ee0b86><a class="logo" href="../" data-v-91ee0b86><div class="logo-mark" data-v-91ee0b86></div><span data-v-91ee0b86>MiniTools</span></a><div class="actions" data-v-91ee0b86><button class="theme-switcher" type="button" title="Switch to light mode" aria-label="Switch to light mode" data-v-91ee0b86 data-v-8a827b0d><svg viewBox="0 0 24 24" aria-hidden="true" data-v-8a827b0d><circle cx="12" cy="12" r="4" data-v-8a827b0d></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" data-v-8a827b0d></path></svg></button><label class="language-switcher" data-v-91ee0b86 data-v-1568d5fa><span data-v-1568d5fa>Language</span><select value="en" aria-label="Language" data-v-1568d5fa><option value="en" lang="en" data-v-1568d5fa>English</option><option value="zh-CN" lang="zh-CN" data-v-1568d5fa>简体中文</option></select></label></div></header><main class="main" data-v-91ee0b86><div class="serial-view" data-v-91ee0b86 data-v-ab4decdb><section class="tool-hero" data-v-ab4decdb><div class="title-wrap" data-v-ab4decdb><div class="title-icon" aria-hidden="true" data-v-ab4decdb>COM</div><div data-v-ab4decdb><p class="eyebrow" data-v-ab4decdb>WEB SERIAL TERMINAL</p><h1 data-v-ab4decdb>Web Serial Terminal</h1><p class="subtitle" data-v-ab4decdb>Web-based serial terminal for microcontrollers. Supports HEX byte matrix, ASCII ANSI terminal, and sequence manager via Web Serial API.</p></div></div></section><!-- 不支持提示卡片 --><div class="terminal-layout" data-v-ab4decdb><!-- 顶部连接配置栏 --><header class="serial-toolbar" data-v-ab4decdb><div class="toolbar-group" data-v-ab4decdb><button type="button" class="connect-btn" data-v-ab4decdb><span class="status-indicator" data-v-ab4decdb></span> Open Port</button><label class="setting-item" data-v-ab4decdb><span data-v-ab4decdb>Baud Rate</span><select data-v-ab4decdb><!--[--><option value="9600" data-v-ab4decdb>9600</option><option value="19200" data-v-ab4decdb>19200</option><option value="38400" data-v-ab4decdb>38400</option><option value="57600" data-v-ab4decdb>57600</option><option value="74880" data-v-ab4decdb>74880</option><option value="115200" data-v-ab4decdb selected>115200</option><option value="230400" data-v-ab4decdb>230400</option><option value="460800" data-v-ab4decdb>460800</option><option value="921600" data-v-ab4decdb>921600</option><!--]--></select></label><label class="setting-item" data-v-ab4decdb><span data-v-ab4decdb>Parity</span><select data-v-ab4decdb><option value="none" data-v-ab4decdb selected>None</option><option value="even" data-v-ab4decdb>Even</option><option value="odd" data-v-ab4decdb>Odd</option></select></label></div><div class="toolbar-group" data-v-ab4decdb><!-- DTR / RTS 控制 --><div class="signals-group" data-v-ab4decdb><button type="button" class="signal-btn" disabled data-v-ab4decdb>DTR</button><button type="button" class="signal-btn" disabled data-v-ab4decdb>RTS</button><button type="button" class="reset-btn" disabled title="触发 RTS 脉冲复位单片机" data-v-ab4decdb>Reset MCU</button></div><!-- 模式切换与操作 --><div class="mode-switch" data-v-ab4decdb><button type="button" class="active" data-v-ab4decdb>ASCII</button><button type="button" class="" data-v-ab4decdb>HEX 视图</button></div><button type="button" class="tool-btn" data-v-ab4decdb>Clear</button><button type="button" class="tool-btn" data-v-ab4decdb>Export Log</button></div></header><!-- 主视图区域：左侧终端/HEX，右侧快捷指令管理器 --><div class="workspace-grid" data-v-ab4decdb><!-- 核心监视器面板 --><main class="monitor-panel" data-v-ab4decdb><!-- ASCII 终端 --><div class="terminal-wrapper" style="" data-v-ab4decdb></div><!-- HEX 矩阵视图 --><div class="hex-wrapper" style="display:none;" data-v-ab4decdb><div class="empty-hint" data-v-ab4decdb>No data sent or received</div><!--[--><!--]--></div><!-- 状态栏：TX/RX 字节统计与状态 --><div class="monitor-footer" data-v-ab4decdb><div class="footer-stats" data-v-ab4decdb><span data-v-ab4decdb>RX: <b data-v-ab4decdb>0 B</b></span><span data-v-ab4decdb>TX: <b data-v-ab4decdb>0 B</b></span></div><div class="footer-actions" data-v-ab4decdb><label class="checkbox-label" data-v-ab4decdb><input checked type="checkbox" data-v-ab4decdb><span data-v-ab4decdb>Auto Scroll</span></label><label class="checkbox-label" data-v-ab4decdb><input type="checkbox" data-v-ab4decdb><span data-v-ab4decdb>Timestamp</span></label></div></div><!-- 底部输入与发送栏 --><footer class="send-bar" data-v-ab4decdb><div class="send-inputs" data-v-ab4decdb><input value="" type="text" class="send-input" placeholder="Enter command or text to send…" data-v-ab4decdb><div class="send-options" data-v-ab4decdb><label class="checkbox-label" data-v-ab4decdb><input type="checkbox" data-v-ab4decdb><span data-v-ab4decdb>HEX</span></label><select class="ending-select" data-v-ab4decdb><option value="CRLF" data-v-ab4decdb selected>CRLF (\r\n)</option><option value="LF" data-v-ab4decdb>LF (\n)</option><option value="CR" data-v-ab4decdb>CR (\r)</option><option value="None" data-v-ab4decdb>No EOL</option></select></div><button type="button" class="primary-send-btn" disabled data-v-ab4decdb>发送</button></div><div class="repeat-bar" data-v-ab4decdb><label class="checkbox-label" data-v-ab4decdb><input type="checkbox" disabled data-v-ab4decdb><span data-v-ab4decdb>Auto Repeat (ms)</span></label><input value="1000" type="number" min="50" step="100" class="interval-input" data-v-ab4decdb></div></footer></main><!-- 右侧：快捷指令序列面板 (Sequence Manager) --><aside class="sequence-panel" data-v-ab4decdb><h3 data-v-ab4decdb>Sequence Manager</h3><div class="sequence-list" data-v-ab4decdb><!--[--><!--]--></div><!-- 添加新指令 --><div class="add-seq-form" data-v-ab4decdb><input value="" type="text" class="form-input" placeholder="Name (optional)" data-v-ab4decdb><input value="" type="text" class="form-input" placeholder="Command (e.g. AT+CSQ)" data-v-ab4decdb><div class="form-row" data-v-ab4decdb><label class="checkbox-label" data-v-ab4decdb><input type="checkbox" data-v-ab4decdb><span data-v-ab4decdb>HEX</span></label><select class="form-select" data-v-ab4decdb><option value="CRLF" data-v-ab4decdb selected>CRLF</option><option value="LF" data-v-ab4decdb>LF</option><option value="None" data-v-ab4decdb>None</option></select><button type="button" class="add-btn" data-v-ab4decdb>Add</button></div></div></aside></div></div><div class="adsense-container" data-v-ab4decdb data-v-a0e11c77><!-- webtools横向自适应广告单元 --><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-7286632197002340" data-ad-slot="3441481088" data-ad-format="auto" data-full-width-responsive="true" data-v-a0e11c77></ins></div></div></main><footer class="footer" data-v-91ee0b86>© RustFisher MiniTools. All rights reserved.</footer></div></div>
+  </body>
+</html>
+

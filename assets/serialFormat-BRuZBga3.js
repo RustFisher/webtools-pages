@@ -1,0 +1,3 @@
+function e(e,t=!1,n=`CRLF`){var r;if(t){let t=e.replace(/[\s\r\n,;]+|0x/gi,``);if(t.length%2!=0)throw Error(`HEX 字符串字节长度不合法，必须为偶数个十六进制字符。`);if(t.length===0)return new Uint8Array;let n=new Uint8Array(t.length/2);for(let e=0;e<t.length;e+=2){let r=parseInt(t.substr(e,2),16);if(isNaN(r))throw Error(`包含非十六进制字符: "${t.substr(e,2)}"`);n[e/2]=r}return n}let i=e+((r={None:``,CR:`\r`,LF:`
+`,CRLF:`\r
+`}[n])==null?``:r);return new TextEncoder().encode(i)}function t(e){let t=[];for(let n=0;n<e.length;n++)t.push(e[n].toString(16).padStart(2,`0`).toUpperCase());return t.join(` `)}function n(e){return e<1024?`${e} B`:e<1048576?`${(e/1024).toFixed(1)} KB`:`${(e/1048576).toFixed(2)} MB`}export{n,e as r,t};

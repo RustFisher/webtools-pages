@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Inspect ESP32 and ESP8266 BIN firmware locally in your browser. View image headers, app metadata, partition tables, checksums, SHA-256 and HEX preview without uploading files.">
+    <link rel="canonical" href="https://webtools.rustfisher.com/espbin/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MiniTools">
+    <meta property="og:title" content="ESP BIN Firmware Inspector Online | MiniTools">
+    <meta property="og:description" content="Inspect ESP32 and ESP8266 BIN firmware locally in your browser. View image headers, app metadata, partition tables, checksums, SHA-256 and HEX preview without uploading files.">
+    <meta property="og:url" content="https://webtools.rustfisher.com/espbin/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ESP BIN Firmware Inspector Online | MiniTools">
+    <meta name="twitter:description" content="Inspect ESP32 and ESP8266 BIN firmware locally in your browser. View image headers, app metadata, partition tables, checksums, SHA-256 and HEX preview without uploading files.">
+    <meta name="keywords" content="ESP BIN inspector, ESP32 firmware parser, ESP8266 BIN analyzer, Espressif firmware image, partition table viewer, firmware HEX preview, online firmware inspector">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires a modern browser with File API support","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"featureList":["Local ESP BIN firmware parsing","ESP32 and ESP8266 image header inspection","Application metadata extraction","Partition table viewer","SHA-256 and checksum display","Paged HEX preview without file upload"],"url":"https://webtools.rustfisher.com/espbin/","name":"ESP BIN Firmware Inspector Online | MiniTools","description":"Inspect ESP32 and ESP8266 BIN firmware locally in your browser. View image headers, app metadata, partition tables, checksums, SHA-256 and HEX preview without uploading files."}</script>
+
+    <script>
+      (() => {
+        let theme = 'dark';
+        try { theme = localStorage.getItem('webtools-theme') === 'light' ? 'light' : 'dark'; } catch {}
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#1767ff" />
+    <title>ESP BIN Firmware Inspector Online | MiniTools</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZPQFF2QZ0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PZPQFF2QZ0');
+    </script>
+    <script type="module" crossorigin src="../assets/espbin-BjMCkJA2.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/main-Dvyk450w.js">
+    <link rel="modulepreload" crossorigin href="../assets/AdSenseBanner-DJR42bvm.js">
+    <link rel="modulepreload" crossorigin href="../assets/analytics-lNAAcqpJ.js">
+    <link rel="modulepreload" crossorigin href="../assets/useEspBinAnalysis-ebnG4-vK.js">
+    <link rel="modulepreload" crossorigin href="../assets/serialFormat-BRuZBga3.js">
+    <link rel="modulepreload" crossorigin href="../assets/EspBinInspectorView-BYBMl90z.js">
+    <link rel="stylesheet" crossorigin href="../assets/main-Diy0_TMl.css">
+    <link rel="stylesheet" crossorigin href="../assets/AdSenseBanner-cAuRBdc2.css">
+    <link rel="stylesheet" crossorigin href="../assets/EspBinInspectorView-Cpn34oCx.css">
+    <link rel="stylesheet" crossorigin href="../assets/espbin-DnII48i3.css">
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yxziif07qc");</script>
+  </head>
+  <body>
+    <div id="app"><div class="espbin-page" data-v-3913aa00><header class="header" data-v-3913aa00><a class="logo" href="../" data-v-3913aa00><div class="logo-mark" data-v-3913aa00></div><span data-v-3913aa00>MiniTools</span></a><div class="actions" data-v-3913aa00><button class="theme-switcher" type="button" title="Switch to light mode" aria-label="Switch to light mode" data-v-3913aa00 data-v-8a827b0d><svg viewBox="0 0 24 24" aria-hidden="true" data-v-8a827b0d><circle cx="12" cy="12" r="4" data-v-8a827b0d></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" data-v-8a827b0d></path></svg></button><label class="language-switcher" data-v-3913aa00 data-v-1568d5fa><span data-v-1568d5fa>Language</span><select value="en" aria-label="Language" data-v-1568d5fa><option value="en" lang="en" data-v-1568d5fa>English</option><option value="zh-CN" lang="zh-CN" data-v-1568d5fa>简体中文</option></select></label></div></header><main class="main" data-v-3913aa00><section class="espbin-page" data-v-3913aa00 data-v-602b55b6><header class="hero-card" data-v-602b55b6><p class="eyebrow" data-v-602b55b6>ESP BIN Inspector</p><h1 data-v-602b55b6>ESP BIN Firmware Inspector</h1><p data-v-602b55b6>Choose or drop a .bin firmware file to inspect ESP firmware structure, partition tables and HEX data locally in your browser.</p></header><div class="workspace-grid" data-v-602b55b6><aside class="side-panel" data-v-602b55b6><label class="drop-zone" data-v-602b55b6><input type="file" accept=".bin,application/octet-stream" data-v-602b55b6><span class="drop-title" data-v-602b55b6>Choose or drop a .bin firmware file</span><span class="drop-note" data-v-602b55b6>This tool parses firmware locally in your browser. Firmware files are not uploaded.</span></label><div class="field-card" data-v-602b55b6><label data-v-602b55b6><span data-v-602b55b6>Offset</span><input value="0x0" type="text" placeholder="0x0" data-v-602b55b6></label><p class="muted" data-v-602b55b6>For display reference only. File contents are not modified.</p></div><!----><!----></aside><main class="result-panel" data-v-602b55b6><div class="empty-state" data-v-602b55b6><h2 data-v-602b55b6>No file selected</h2><p data-v-602b55b6>Import an ESP .bin firmware file to show image summary, structure and HEX preview here.</p></div></main></div><div class="adsense-container" data-v-602b55b6 data-v-a0e11c77><!-- webtools横向自适应广告单元 --><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-7286632197002340" data-ad-slot="3441481088" data-ad-format="auto" data-full-width-responsive="true" data-v-a0e11c77></ins></div></section></main><footer class="footer" data-v-3913aa00>© RustFisher MiniTools. All rights reserved.</footer></div></div>
+  </body>
+</html>

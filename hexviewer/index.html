@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="View binary files locally, jump to offsets, search HEX and UTF-8, copy bytes and inspect numeric values.">
+    <link rel="canonical" href="https://webtools.rustfisher.com/hexviewer/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MiniTools">
+    <meta property="og:title" content="Binary HEX Viewer Online | MiniTools">
+    <meta property="og:description" content="View binary files locally, jump to offsets, search HEX and UTF-8, copy bytes and inspect numeric values.">
+    <meta property="og:url" content="https://webtools.rustfisher.com/hexviewer/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Binary HEX Viewer Online | MiniTools">
+    <meta name="twitter:description" content="View binary files locally, jump to offsets, search HEX and UTF-8, copy bytes and inspect numeric values.">
+
+    <script>
+      (() => {
+        let theme = 'dark';
+        try { theme = localStorage.getItem('webtools-theme') === 'light' ? 'light' : 'dark'; } catch {}
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#1767ff" />
+    <title>Binary HEX Viewer Online | MiniTools</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZPQFF2QZ0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PZPQFF2QZ0');
+    </script>
+    <script type="module" crossorigin src="../assets/hexviewer-BWjADl0x.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/main-O05_BTvb.js">
+    <link rel="modulepreload" crossorigin href="../assets/hexTransfer-lWNHh-pC.js">
+    <link rel="modulepreload" crossorigin href="../assets/serialFormat-BRuZBga3.js">
+    <link rel="stylesheet" crossorigin href="../assets/main-Diy0_TMl.css">
+    <link rel="stylesheet" crossorigin href="../assets/hexviewer-BS0v3owS.css">
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yxziif07qc");</script>
+  </head>
+  <body>
+    <div id="app"><div class="espbin-page" data-v-5afe76b7><header class="header" data-v-5afe76b7><a class="logo" href="../" data-v-5afe76b7><div class="logo-mark" data-v-5afe76b7></div><span data-v-5afe76b7>MiniTools</span></a><div class="actions" data-v-5afe76b7><button class="theme-switcher" type="button" title="Switch to light mode" aria-label="Switch to light mode" data-v-5afe76b7 data-v-8a827b0d><svg viewBox="0 0 24 24" aria-hidden="true" data-v-8a827b0d><circle cx="12" cy="12" r="4" data-v-8a827b0d></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" data-v-8a827b0d></path></svg></button><label class="language-switcher" data-v-5afe76b7 data-v-1568d5fa><span data-v-1568d5fa>Language</span><select value="en" aria-label="Language" data-v-1568d5fa><option value="en" lang="en" data-v-1568d5fa>English</option><option value="zh-CN" lang="zh-CN" data-v-1568d5fa>简体中文</option></select></label></div></header><main class="main" data-v-5afe76b7><section class="hex-viewer" data-v-5afe76b7 data-v-3f3b7d8c><header class="hex-heading" data-v-3f3b7d8c><div data-v-3f3b7d8c><p class="eyebrow" data-v-3f3b7d8c>Binary HEX Viewer</p><h1 data-v-3f3b7d8c>Binary HEX Viewer</h1><p data-v-3f3b7d8c>View any file locally in read-only mode. Search bytes and inspect values without uploading.</p></div><label class="open-button" data-v-3f3b7d8c>Open file<input type="file" data-v-3f3b7d8c></label></header><div class="file-bar" data-v-3f3b7d8c><strong data-v-3f3b7d8c>Choose or drop a file to begin</strong><!----><!----><span data-v-3f3b7d8c>Read-only</span></div><div class="hex-tools" data-v-3f3b7d8c><form data-v-3f3b7d8c><label data-v-3f3b7d8c>File offset <select data-v-3f3b7d8c><option value="16" data-v-3f3b7d8c selected>HEX</option><option value="10" data-v-3f3b7d8c>DEC</option></select><input value="0" aria-label="File offset" placeholder="0x1000" data-v-3f3b7d8c></label><button disabled data-v-3f3b7d8c>Go</button><button type="button" disabled data-v-3f3b7d8c>Start</button><button type="button" disabled data-v-3f3b7d8c>End</button></form><form data-v-3f3b7d8c><select aria-label="Search mode" data-v-3f3b7d8c><option value="hex" data-v-3f3b7d8c selected>HEX</option><option value="text" data-v-3f3b7d8c>UTF-8</option></select><input value="" aria-label="Search query" placeholder="AA BB 01" data-v-3f3b7d8c><button disabled data-v-3f3b7d8c>Find next</button><button type="button" disabled data-v-3f3b7d8c>Previous</button><!----></form></div><p class="notice" role="status" data-v-3f3b7d8c></p><div class="hex-workspace" data-v-3f3b7d8c><div class="hex-main" data-v-3f3b7d8c><div class="hex-grid" tabindex="0" aria-label="HEX byte grid. Use arrow keys to navigate and Shift to extend selection." data-v-3f3b7d8c><div class="grid-heading" data-v-3f3b7d8c><span data-v-3f3b7d8c>OFFSET</span><span data-v-3f3b7d8c>00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F</span><span data-v-3f3b7d8c>ASCII</span></div><p class="empty" data-v-3f3b7d8c>Choose or drop a file to begin</p><!--[--><!--]--></div><div class="pagination" data-v-3f3b7d8c><button disabled data-v-3f3b7d8c>Previous page</button><span data-v-3f3b7d8c>1 / 1</span><button disabled data-v-3f3b7d8c>Next page</button></div></div><aside data-v-3f3b7d8c><details open data-v-3f3b7d8c><summary data-v-3f3b7d8c>Data inspector</summary><label data-v-3f3b7d8c><input checked type="checkbox" data-v-3f3b7d8c> Little endian (uncheck for big endian)</label><p data-v-3f3b7d8c>Decode from the current byte. Insufficient bytes are shown as —.</p><dl data-v-3f3b7d8c><!--[--><!--[--><dt data-v-3f3b7d8c>Uint8</dt><dd data-v-3f3b7d8c>—</dd><!--]--><!--[--><dt data-v-3f3b7d8c>Int8</dt><dd data-v-3f3b7d8c>—</dd><!--]--><!--[--><dt data-v-3f3b7d8c>Uint16</dt><dd data-v-3f3b7d8c>—</dd><!--]--><!--[--><dt data-v-3f3b7d8c>Int16</dt><dd data-v-3f3b7d8c>—</dd><!--]--><!--[--><dt data-v-3f3b7d8c>Uint32</dt><dd data-v-3f3b7d8c>—</dd><!--]--><!--[--><dt data-v-3f3b7d8c>Int32</dt><dd data-v-3f3b7d8c>—</dd><!--]--><!--[--><dt data-v-3f3b7d8c>Float32</dt><dd data-v-3f3b7d8c>—</dd><!--]--><!--[--><dt data-v-3f3b7d8c>Float64</dt><dd data-v-3f3b7d8c>—</dd><!--]--><!--]--></dl></details><div class="copy-tools" data-v-3f3b7d8c><button disabled data-v-3f3b7d8c>Copy HEX</button><button disabled data-v-3f3b7d8c>Copy UTF-8</button><button disabled data-v-3f3b7d8c>Copy HEX dump</button><button disabled data-v-3f3b7d8c>Copy offset</button></div></aside></div><footer class="selection-bar" data-v-3f3b7d8c>Current offset: — · Selection: — · 0 B · Read-only</footer></section></main><footer class="footer" data-v-5afe76b7>© RustFisher MiniTools. All rights reserved.</footer></div></div>
+  </body>
+</html>

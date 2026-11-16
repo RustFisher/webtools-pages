@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Paste serial log text, extract timestamps and sample/system voltage values, and plot a live line chart in your browser. Export PNG or CSV; data never leaves your device.">
+    <link rel="canonical" href="https://webtools.rustfisher.com/logplot/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MiniTools">
+    <meta property="og:title" content="Serial Log Plotter: Paste Logs, Plot Voltage Curves | MiniTools">
+    <meta property="og:description" content="Paste serial log text, extract timestamps and sample/system voltage values, and plot a live line chart in your browser. Export PNG or CSV; data never leaves your device.">
+    <meta property="og:url" content="https://webtools.rustfisher.com/logplot/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Serial Log Plotter: Paste Logs, Plot Voltage Curves | MiniTools">
+    <meta name="twitter:description" content="Paste serial log text, extract timestamps and sample/system voltage values, and plot a live line chart in your browser. Export PNG or CSV; data never leaves your device.">
+    <meta name="keywords" content="serial log plotter, serial log chart, voltage curve, UART log plot, embedded log analyzer, paste log to chart">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Serial Log Plotter: Paste Logs, Plot Voltage Curves | MiniTools","description":"Paste serial log text, extract timestamps and sample/system voltage values, and plot a live line chart in your browser. Export PNG or CSV; data never leaves your device.","url":"https://webtools.rustfisher.com/logplot/","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires a modern browser with JavaScript enabled.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+
+    <script>
+      (() => {
+        let theme = 'dark';
+        try { theme = localStorage.getItem('webtools-theme') === 'light' ? 'light' : 'dark'; } catch {}
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#1767ff" />
+    <title>Serial Log Plotter: Paste Logs, Plot Voltage Curves | MiniTools</title>
+    <!-- <script defer src="https://cloud.umami.is/script.js" data-website-id="c0171030-787e-4938-b2d7-06bdb9f304b8"></script> -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZPQFF2QZ0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PZPQFF2QZ0');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7286632197002340"
+      crossorigin="anonymous"></script>
+    <script type="module" crossorigin src="../assets/logplot-D0cmoJSE.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/main-BF4ALYpe.js">
+    <link rel="modulepreload" crossorigin href="../assets/ToolGuide-D0F8_mfk.js">
+    <link rel="modulepreload" crossorigin href="../assets/AdSenseBanner-CgTMYSlD.js">
+    <link rel="modulepreload" crossorigin href="../assets/analytics-lNAAcqpJ.js">
+    <link rel="modulepreload" crossorigin href="../assets/preload-helper-B7qeedMF.js">
+    <link rel="stylesheet" crossorigin href="../assets/main-Diy0_TMl.css">
+    <link rel="stylesheet" crossorigin href="../assets/ToolGuide-C1gF9se-.css">
+    <link rel="stylesheet" crossorigin href="../assets/AdSenseBanner-cAuRBdc2.css">
+    <link rel="stylesheet" crossorigin href="../assets/logplot-BYwnMUI4.css">
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yxziif07qc");</script>
+  </head>
+  <body>
+    <div id="app"><div class="logplot-page" data-v-ce0d4654><header class="header" data-v-ce0d4654><a class="logo" href="../" data-v-ce0d4654><div class="logo-mark" data-v-ce0d4654></div><span data-v-ce0d4654>MiniTools</span></a><div class="actions" data-v-ce0d4654><button class="theme-switcher" type="button" title="Switch to light mode" aria-label="Switch to light mode" data-v-ce0d4654 data-v-8a827b0d><svg viewBox="0 0 24 24" aria-hidden="true" data-v-8a827b0d><circle cx="12" cy="12" r="4" data-v-8a827b0d></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" data-v-8a827b0d></path></svg></button><label class="language-switcher" data-v-ce0d4654 data-v-1568d5fa><span data-v-1568d5fa>Language</span><select value="en" aria-label="Language" data-v-1568d5fa><option value="en" lang="en" data-v-1568d5fa>English</option><option value="zh-CN" lang="zh-CN" data-v-1568d5fa>简体中文</option></select></label></div></header><main class="main" data-v-ce0d4654><!--[--><section class="tool-hero" data-v-d104890f><div class="title-wrap" data-v-d104890f><div class="title-icon" data-v-d104890f>📈</div><div data-v-d104890f><p class="eyebrow" data-v-d104890f>LOG PLOTTER</p><h1 data-v-d104890f>Serial Log Plotter</h1><p class="subtitle" data-v-d104890f>Paste serial log text to extract timestamps and voltages and plot a live line chart. Everything runs locally in your browser.</p></div></div></section><section class="tool-card" data-v-d104890f><div class="toolbar" data-v-d104890f><div class="toolbar-left" data-v-d104890f><button class="primary" type="button" data-v-d104890f>Load sample</button><button class="ghost-danger" type="button" data-v-d104890f>Clear</button></div><div class="toolbar-right" data-v-d104890f><button type="button" disabled data-v-d104890f>Export PNG</button><button type="button" disabled data-v-d104890f>Export CSV</button></div></div><div class="status" data-v-d104890f><span class="status-dot" data-v-d104890f></span><span data-v-d104890f>Paste a serial log and the curves will be detected and plotted automatically.</span><!----></div><div class="panel input-panel" data-v-d104890f><div class="panel-head" data-v-d104890f><span data-v-d104890f>Log input</span><small data-v-d104890f>0 lines · 0 characters</small></div><textarea wrap="off" spellcheck="false" placeholder="Paste serial log here, e.g.:
+current time: 2026/08/28 11:17:59
+sample voltage: 3126 mV
+system voltage: 3075 mV" data-v-d104890f></textarea></div><div class="panel chart-panel" data-v-d104890f><div class="panel-head" data-v-d104890f><span data-v-d104890f>Chart</span><label class="axis-select" data-v-d104890f>X axis <select data-v-d104890f><!--[--><option value="time" data-v-d104890f selected>Log time</option><option value="relative" data-v-d104890f>Relative time (s)</option><option value="clock" data-v-d104890f>sys clock</option><option value="index" data-v-d104890f>Index</option><!--]--></select></label></div><div class="chart-body" data-v-d104890f><div class="hidden chart" data-v-d104890f></div><div class="chart-empty" data-v-d104890f>No data yet. Paste a log or click &quot;Load sample&quot;.</div><!----></div></div><!----></section><section class="feature-strip" data-v-d104890f><div data-v-d104890f><b data-v-d104890f>Local Processing</b><span data-v-d104890f>Your input is never uploaded</span></div><div data-v-d104890f><b data-v-d104890f>Live parsing</b><span data-v-d104890f>Curves refresh as you paste or edit</span></div><div data-v-d104890f><b data-v-d104890f>Extensible rules</b><span data-v-d104890f>Parsing rules are configuration; new fields can be added</span></div></section><article class="tool-guide" lang="en" aria-label="Plot Voltage Curves from Pasted Serial Logs" data-v-d104890f data-v-5d38c749><h2 data-v-5d38c749>Plot Voltage Curves from Pasted Serial Logs</h2><p data-v-5d38c749>Paste plain-text serial output and the page extracts the log time plus sample and system voltage values, then draws a line chart as you type. Parsing and drawing happen locally in your browser.</p><!--[--><section data-v-5d38c749><h3 data-v-5d38c749>How to Plot a Serial Log</h3><!--[--><!--]--><ol data-v-5d38c749><!--[--><li data-v-5d38c749>Paste the serial log text into the input area, or load the sample.</li><li data-v-5d38c749>The page detects each current time line and attaches the sample voltage and system voltage lines that follow it.</li><li data-v-5d38c749>Drag across the chart to zoom, double-click to reset, and click a legend entry to hide a curve.</li><li data-v-5d38c749>Choose the X axis (log time, relative seconds, sys clock or index), then export a PNG or CSV when needed.</li><!--]--></ol><!----></section><section data-v-5d38c749><h3 data-v-5d38c749>Supported Log Format</h3><!--[--><p data-v-5d38c749>Each record starts at a current time line. Matching is case-insensitive and tolerates separators such as spaces, hyphens, underscores, &quot;:&quot; and &quot;=&quot;. Timestamps, ANSI color codes and tool prefixes before the keywords are ignored.</p><!--]--><!----><pre data-v-5d38c749><code data-v-5d38c749>sys clock:19481 status:2 esp_power:0 esp_status:0
+current time: 2026/08/28 11:17:59
+sample voltage: 3126 mV
+system voltage: 3075 mV</code></pre></section><section data-v-5d38c749><h3 data-v-5d38c749>Incomplete Records and Units</h3><!--[--><p data-v-5d38c749>A record needs a time and at least one voltage value. A trailing time line without voltages is counted as incomplete and not plotted. Values in V are converted to mV.</p><p data-v-5d38c749>Log times carry no time zone, so they are shown as written. If the time moves backwards, for example after a device restart, those points are skipped and reported.</p><!--]--><!----><!----></section><section data-v-5d38c749><h3 data-v-5d38c749>Privacy and Limits</h3><!--[--><p data-v-5d38c749>The log text never leaves your browser, although the website may load analytics scripts. The input is kept in local storage so a refresh does not lose it. Very large logs may feel slower while typing.</p><!--]--><!----><!----></section><!--]--><section data-v-5d38c749><h3 data-v-5d38c749>Frequently Asked Questions</h3><!--[--><div class="guide-answer" data-v-5d38c749><h4 data-v-5d38c749>Why is my curve empty?</h4><p data-v-5d38c749>No record contained both a current time line and a voltage line. Check the keyword spelling and that the lines are in the same order as the example.</p></div><div class="guide-answer" data-v-5d38c749><h4 data-v-5d38c749>Can I plot other fields such as current?</h4><p data-v-5d38c749>Not in this version, which draws sample voltage and system voltage. The parser is rule-based so more fields can be added later.</p></div><div class="guide-answer" data-v-5d38c749><h4 data-v-5d38c749>Can it read the serial port directly?</h4><p data-v-5d38c749>Not yet. Copy the output from a terminal such as the Web Serial Terminal and paste it here.</p></div><!--]--></section><nav aria-label="Related tools" data-v-5d38c749><h3 data-v-5d38c749>Related Tools</h3><ul data-v-5d38c749><!--[--><li data-v-5d38c749><a href="/serial/" data-v-5d38c749>Web Serial Terminal</a></li><li data-v-5d38c749><a href="/espflash/" data-v-5d38c749>ESP Firmware Flasher</a></li><!--]--></ul></nav><!----></article><!--]--><div class="adsense-container" data-v-ce0d4654 data-v-a0e11c77><!-- webtools横向自适应广告单元 --><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-7286632197002340" data-ad-slot="3441481088" data-ad-format="auto" data-full-width-responsive="true" data-v-a0e11c77></ins></div></main><footer class="footer" data-v-ce0d4654>© RustFisher MiniTools. All rights reserved.</footer></div></div>
+  </body>
+</html>

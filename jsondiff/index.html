@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Compare two JSON, YAML, XML, CSV, TSV or JSONL inputs by structure. Review added, removed and changed values by JSONPath, then copy or download the diff locally in your browser.">
+    <link rel="canonical" href="https://webtools.rustfisher.com/jsondiff/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MiniTools">
+    <meta property="og:title" content="JSON Diff Online: Compare Two JSON Files | MiniTools">
+    <meta property="og:description" content="Compare two JSON, YAML, XML, CSV, TSV or JSONL inputs by structure. Review added, removed and changed values by JSONPath, then copy or download the diff locally in your browser.">
+    <meta property="og:url" content="https://webtools.rustfisher.com/jsondiff/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="JSON Diff Online: Compare Two JSON Files | MiniTools">
+    <meta name="twitter:description" content="Compare two JSON, YAML, XML, CSV, TSV or JSONL inputs by structure. Review added, removed and changed values by JSONPath, then copy or download the diff locally in your browser.">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"JSON Diff Online: Compare Two JSON Files | MiniTools","description":"Compare two JSON, YAML, XML, CSV, TSV or JSONL inputs by structure. Review added, removed and changed values by JSONPath, then copy or download the diff locally in your browser.","url":"https://webtools.rustfisher.com/jsondiff/","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires a modern browser with JavaScript enabled.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+
+    <script>
+      (() => {
+        let theme = 'dark';
+        try { theme = localStorage.getItem('webtools-theme') === 'light' ? 'light' : 'dark'; } catch {}
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#1767ff" />
+    <title>JSON Diff Online: Compare Two JSON Files | MiniTools</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZPQFF2QZ0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PZPQFF2QZ0');
+    </script>
+    <script type="module" crossorigin src="../assets/jsondiff-BlvScRsK.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/main-BYqk27N5.js">
+    <link rel="modulepreload" crossorigin href="../assets/ToolGuide-b0OAeRK7.js">
+    <link rel="modulepreload" crossorigin href="../assets/AdSenseBanner-DUk0bjEK.js">
+    <link rel="modulepreload" crossorigin href="../assets/structuredInput-DRmKQQnD.js">
+    <link rel="modulepreload" crossorigin href="../assets/analytics-lNAAcqpJ.js">
+    <link rel="stylesheet" crossorigin href="../assets/main-Diy0_TMl.css">
+    <link rel="stylesheet" crossorigin href="../assets/ToolGuide-C1gF9se-.css">
+    <link rel="stylesheet" crossorigin href="../assets/AdSenseBanner-cAuRBdc2.css">
+    <link rel="stylesheet" crossorigin href="../assets/structuredInput-BqNbFEK9.css">
+    <link rel="stylesheet" crossorigin href="../assets/jsondiff-7oMt4sTJ.css">
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yxziif07qc");</script>
+  </head>
+  <body>
+    <div id="app"><div class="jsondiff-page" data-v-48687ab8><header class="header" data-v-48687ab8><a class="logo" href="../" data-v-48687ab8><div class="logo-mark" data-v-48687ab8></div><span data-v-48687ab8>MiniTools</span></a><div class="actions" data-v-48687ab8><button class="theme-switcher" type="button" title="Switch to light mode" aria-label="Switch to light mode" data-v-48687ab8 data-v-8a827b0d><svg viewBox="0 0 24 24" aria-hidden="true" data-v-8a827b0d><circle cx="12" cy="12" r="4" data-v-8a827b0d></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" data-v-8a827b0d></path></svg></button><label class="language-switcher" data-v-48687ab8 data-v-1568d5fa><span data-v-1568d5fa>Language</span><select value="en" aria-label="Language" data-v-1568d5fa><option value="en" lang="en" data-v-1568d5fa>English</option><option value="zh-CN" lang="zh-CN" data-v-1568d5fa>简体中文</option></select></label></div></header><main class="main" data-v-48687ab8><!--[--><section class="tool-hero" data-v-c985491c><div class="title-wrap" data-v-c985491c><div class="title-icon" data-v-c985491c>Δ</div><div data-v-c985491c><p class="eyebrow" data-v-c985491c>JSON DIFF</p><h1 data-v-c985491c>JSON Diff Tool</h1><p class="subtitle" data-v-c985491c>Compare two JSON, YAML, XML, CSV, TSV or JSONL inputs and review additions, removals and changes by path.</p></div></div></section><section class="tool-card" data-v-c985491c><div class="toolbar" data-v-c985491c><div class="toolbar-left" data-v-c985491c><button class="primary" type="button" data-v-c985491c>Compare</button><button type="button" data-v-c985491c>Swap sides</button><button type="button" data-v-c985491c>Sample</button><button class="ghost-danger" type="button" data-v-c985491c>Clear</button></div><div class="toolbar-right" data-v-c985491c><span class="status-inline" data-v-c985491c>Comparison runs locally in your browser</span></div></div><div class="ready status" role="status" aria-live="polite" data-v-c985491c><span class="status-dot" data-v-c985491c></span> Enter both sides to compare differences automatically.</div><div class="diff-grid" data-v-c985491c><div class="panel diff-panel" data-v-c985491c><div class="panel-head" data-v-c985491c><div class="panel-head-left" data-v-c985491c><span data-v-c985491c>Left data</span><small data-v-c985491c>10 lines · 107 characters</small><span class="transform-chip" data-v-c985491c>Detected JSON</span></div><div class="panel-head-right" data-v-c985491c><select class="format-select" aria-label="Input format" data-v-c985491c><option value="auto" data-v-c985491c selected>Auto-detect</option><option value="json" data-v-c985491c>JSON</option><option value="yaml" data-v-c985491c>YAML</option><option value="xml" data-v-c985491c>XML</option><option value="csv" data-v-c985491c>CSV</option><option value="tsv" data-v-c985491c>TSV</option><option value="jsonl" data-v-c985491c>JSONL</option></select><button class="mini-btn" type="button" data-v-c985491c>Import file</button><input class="file-input" type="file" accept=".json,.yaml,.yml,.xml,.csv,.tsv,.jsonl,.ndjson,.txt,text/plain,application/json,application/xml,application/x-ndjson" data-v-c985491c></div></div><div class="editor-body" data-v-c985491c><div class="json-editor" style="--gutter-width:54px;--editor-line-height:24px;--editor-padding-y:18px;" data-v-c985491c data-v-903708b4><div class="gutter" aria-hidden="true" data-v-903708b4><div class="gutter-inner" style="transform:translateY(-0px);" data-v-903708b4><div style="height:0px;" data-v-903708b4></div><!--[--><span class="line-number" data-v-903708b4>1</span><span class="line-number" data-v-903708b4>2</span><span class="line-number" data-v-903708b4>3</span><span class="line-number" data-v-903708b4>4</span><span class="line-number" data-v-903708b4>5</span><span class="line-number" data-v-903708b4>6</span><span class="line-number" data-v-903708b4>7</span><!--]--><div style="height:72px;" data-v-903708b4></div></div></div><div class="editor-area" data-v-903708b4><!----><textarea placeholder="Paste left-side content here..." aria-label="Left input" aria-invalid="false" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" wrap="off" data-v-903708b4>{
+  &quot;user&quot;: {
+    &quot;name&quot;: &quot;Alice&quot;,
+    &quot;age&quot;: 30,
+    &quot;tags&quot;: [
+      &quot;admin&quot;
+    ]
+  },
+  &quot;active&quot;: true
+}</textarea></div><!----></div></div><!----></div><div class="panel diff-panel" data-v-c985491c><div class="panel-head" data-v-c985491c><div class="panel-head-left" data-v-c985491c><span data-v-c985491c>Right data</span><small data-v-c985491c>11 lines · 122 characters</small><span class="transform-chip" data-v-c985491c>Detected JSON</span></div><div class="panel-head-right" data-v-c985491c><select class="format-select" aria-label="Input format" data-v-c985491c><option value="auto" data-v-c985491c selected>Auto-detect</option><option value="json" data-v-c985491c>JSON</option><option value="yaml" data-v-c985491c>YAML</option><option value="xml" data-v-c985491c>XML</option><option value="csv" data-v-c985491c>CSV</option><option value="tsv" data-v-c985491c>TSV</option><option value="jsonl" data-v-c985491c>JSONL</option></select><button class="mini-btn" type="button" data-v-c985491c>Import file</button><input class="file-input" type="file" accept=".json,.yaml,.yml,.xml,.csv,.tsv,.jsonl,.ndjson,.txt,text/plain,application/json,application/xml,application/x-ndjson" data-v-c985491c></div></div><div class="editor-body" data-v-c985491c><div class="json-editor" style="--gutter-width:54px;--editor-line-height:24px;--editor-padding-y:18px;" data-v-c985491c data-v-903708b4><div class="gutter" aria-hidden="true" data-v-903708b4><div class="gutter-inner" style="transform:translateY(-0px);" data-v-903708b4><div style="height:0px;" data-v-903708b4></div><!--[--><span class="line-number" data-v-903708b4>1</span><span class="line-number" data-v-903708b4>2</span><span class="line-number" data-v-903708b4>3</span><span class="line-number" data-v-903708b4>4</span><span class="line-number" data-v-903708b4>5</span><span class="line-number" data-v-903708b4>6</span><span class="line-number" data-v-903708b4>7</span><!--]--><div style="height:96px;" data-v-903708b4></div></div></div><div class="editor-area" data-v-903708b4><!----><textarea placeholder="Paste right-side content here..." aria-label="Right input" aria-invalid="false" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" wrap="off" data-v-903708b4>{
+  &quot;user&quot;: {
+    &quot;name&quot;: &quot;Bob&quot;,
+    &quot;age&quot;: 30,
+    &quot;tags&quot;: [
+      &quot;admin&quot;,
+      &quot;editor&quot;
+    ]
+  },
+  &quot;active&quot;: false
+}</textarea></div><!----></div></div><!----></div></div><div class="diff-result" data-v-c985491c><div class="result-head" data-v-c985491c><div class="result-title" data-v-c985491c><b data-v-c985491c>Differences</b><!----></div><div class="result-actions" data-v-c985491c><button class="mini-btn" type="button" disabled data-v-c985491c>Copy diff</button><button class="mini-btn" type="button" disabled data-v-c985491c>Download diff</button></div></div><div class="result-empty" data-v-c985491c>Fix both inputs to view differences</div></div></section><section class="feature-strip" data-v-c985491c><div data-v-c985491c><b data-v-c985491c>Local comparison</b><span data-v-c985491c>Comparison runs locally in your browser</span></div><div data-v-c985491c><b data-v-c985491c>Structural diff</b><span data-v-c985491c>Show additions, removals and changes by JSONPath</span></div><div data-v-c985491c><b data-v-c985491c>Multi-format input</b><span data-v-c985491c>JSON, YAML, XML, CSV, TSV and JSONL</span></div></section><div class="adsense-container" data-v-c985491c data-v-a0e11c77><!-- webtools横向自适应广告单元 --><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-7286632197002340" data-ad-slot="3441481088" data-ad-format="auto" data-full-width-responsive="true" data-v-a0e11c77></ins></div><article class="tool-guide" lang="en" aria-label="Compare Two JSON Inputs Online" data-v-c985491c data-v-5d38c749><h2 data-v-5d38c749>Compare Two JSON Inputs Online</h2><p data-v-5d38c749>Compare two structured inputs by path and review added, removed and changed values. Both sides are parsed locally in your browser, and the inputs can be JSON, YAML, XML, CSV, TSV or JSONL.</p><!--[--><section data-v-5d38c749><h3 data-v-5d38c749>How to Compare JSON</h3><!--[--><!--]--><ol data-v-5d38c749><!--[--><li data-v-5d38c749>Paste or import the left and right inputs.</li><li data-v-5d38c749>Choose Auto-detect or select the input format for each side.</li><li data-v-5d38c749>Review the summary and the change list, then copy or download the diff.</li><!--]--></ol><!----></section><section data-v-5d38c749><h3 data-v-5d38c749>What the Diff Shows</h3><!--[--><p data-v-5d38c749>Objects are compared structurally, so key order does not create differences. Arrays are compared by index. Added, removed and changed values are shown with their JSONPath.</p><p data-v-5d38c749>A changed value displays its before and after values. Large differences are limited and marked as truncated.</p><!--]--><!----><!----></section><section data-v-5d38c749><h3 data-v-5d38c749>Input Formats and Limits</h3><!--[--><p data-v-5d38c749>Each side can use JSON, YAML, XML, CSV, TSV or JSONL. CSV and XML conversions may be lossy, so compare the parsed JSON structures rather than the original source text.</p><p data-v-5d38c749>The comparison runs locally. Very large inputs require clicking Compare instead of waiting for automatic comparison.</p><!--]--><!----><!----></section><!--]--><section data-v-5d38c749><h3 data-v-5d38c749>Frequently Asked Questions</h3><!--[--><div class="guide-answer" data-v-5d38c749><h4 data-v-5d38c749>Does JSON key order matter?</h4><p data-v-5d38c749>No. Objects are compared structurally, so the same keys in a different order are considered equal.</p></div><div class="guide-answer" data-v-5d38c749><h4 data-v-5d38c749>How are arrays compared?</h4><p data-v-5d38c749>Arrays are compared by index. An item inserted at the beginning can therefore appear as many changes in the following positions.</p></div><div class="guide-answer" data-v-5d38c749><h4 data-v-5d38c749>Is my JSON uploaded?</h4><p data-v-5d38c749>No. Both inputs are parsed and compared in your browser.</p></div><!--]--></section><nav aria-label="Related tools" data-v-5d38c749><h3 data-v-5d38c749>Related Tools</h3><ul data-v-5d38c749><!--[--><!--]--></ul></nav><section data-v-5d38c749><h3 data-v-5d38c749>Technical References</h3><ul data-v-5d38c749><!--[--><li data-v-5d38c749><a href="https://www.rfc-editor.org/rfc/rfc8259" data-v-5d38c749>RFC 8259: The JSON Data Interchange Format</a></li><li data-v-5d38c749><a href="https://www.rfc-editor.org/rfc/rfc9535" data-v-5d38c749>RFC 9535: JSONPath</a></li><!--]--></ul></section></article><!--]--></main><footer class="footer" data-v-48687ab8>© RustFisher MiniTools. All rights reserved.</footer></div></div>
+  </body>
+</html>

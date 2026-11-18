@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Validate JSON data against a JSON Schema locally in your browser. See errors by instance path with type, required, format and constraint checks; no data is uploaded.">
+    <link rel="canonical" href="https://webtools.rustfisher.com/jsonschema/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MiniTools">
+    <meta property="og:title" content="JSON Schema Validator Online: Draft 2020-12 | MiniTools">
+    <meta property="og:description" content="Validate JSON data against a JSON Schema locally in your browser. See errors by instance path with type, required, format and constraint checks; no data is uploaded.">
+    <meta property="og:url" content="https://webtools.rustfisher.com/jsonschema/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="JSON Schema Validator Online: Draft 2020-12 | MiniTools">
+    <meta name="twitter:description" content="Validate JSON data against a JSON Schema locally in your browser. See errors by instance path with type, required, format and constraint checks; no data is uploaded.">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"JSON Schema Validator Online: Draft 2020-12 | MiniTools","description":"Validate JSON data against a JSON Schema locally in your browser. See errors by instance path with type, required, format and constraint checks; no data is uploaded.","url":"https://webtools.rustfisher.com/jsonschema/","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires a modern browser with JavaScript enabled.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+
+    <script>
+      (() => {
+        let theme = 'dark';
+        try { theme = localStorage.getItem('webtools-theme') === 'light' ? 'light' : 'dark'; } catch {}
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#1767ff" />
+    <title>JSON Schema Validator Online: Draft 2020-12 | MiniTools</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZPQFF2QZ0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PZPQFF2QZ0');
+    </script>
+    <script type="module" crossorigin src="../assets/jsonschema-BCXDd9LH.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/rolldown-runtime-B0Z9INg1.js">
+    <link rel="modulepreload" crossorigin href="../assets/main-DCPQRNS5.js">
+    <link rel="modulepreload" crossorigin href="../assets/ToolGuide-DZfnMjI-.js">
+    <link rel="modulepreload" crossorigin href="../assets/AdSenseBanner-C6BgU3z1.js">
+    <link rel="modulepreload" crossorigin href="../assets/structuredInput-BsqSHOhI.js">
+    <link rel="modulepreload" crossorigin href="../assets/analytics-lNAAcqpJ.js">
+    <link rel="stylesheet" crossorigin href="../assets/main-Diy0_TMl.css">
+    <link rel="stylesheet" crossorigin href="../assets/ToolGuide-C1gF9se-.css">
+    <link rel="stylesheet" crossorigin href="../assets/AdSenseBanner-cAuRBdc2.css">
+    <link rel="stylesheet" crossorigin href="../assets/structuredInput-BqNbFEK9.css">
+    <link rel="stylesheet" crossorigin href="../assets/jsonschema-nGYunKgq.css">
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yxziif07qc");</script>
+  </head>
+  <body>
+    <div id="app"><div class="jsonschema-page" data-v-583da092><header class="header" data-v-583da092><a class="logo" href="../" data-v-583da092><div class="logo-mark" data-v-583da092></div><span data-v-583da092>MiniTools</span></a><div class="actions" data-v-583da092><button class="theme-switcher" type="button" title="Switch to light mode" aria-label="Switch to light mode" data-v-583da092 data-v-8a827b0d><svg viewBox="0 0 24 24" aria-hidden="true" data-v-8a827b0d><circle cx="12" cy="12" r="4" data-v-8a827b0d></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" data-v-8a827b0d></path></svg></button><label class="language-switcher" data-v-583da092 data-v-1568d5fa><span data-v-1568d5fa>Language</span><select value="en" aria-label="Language" data-v-1568d5fa><option value="en" lang="en" data-v-1568d5fa>English</option><option value="zh-CN" lang="zh-CN" data-v-1568d5fa>简体中文</option></select></label></div></header><main class="main" data-v-583da092><!--[--><section class="tool-hero" data-v-1747672a><div class="title-wrap" data-v-1747672a><div class="title-icon" data-v-1747672a>✓</div><div data-v-1747672a><p class="eyebrow" data-v-1747672a>JSON SCHEMA</p><h1 data-v-1747672a>JSON Schema validator</h1><p class="subtitle" data-v-1747672a>Validate JSON data against a JSON Schema, locate errors by instance path, and keep validation in your browser.</p></div></div></section><section class="tool-card" data-v-1747672a><div class="toolbar" data-v-1747672a><div class="toolbar-left" data-v-1747672a><button class="primary" type="button" data-v-1747672a>Validate</button><button type="button" data-v-1747672a>Sample</button><button type="button" disabled data-v-1747672a>Copy errors</button><button class="ghost-danger" type="button" data-v-1747672a>Clear</button></div><div class="toolbar-right" data-v-1747672a><span class="status-inline" data-v-1747672a>Supports JSON Schema Draft 2020-12 and common Draft-07 keywords</span></div></div><div class="ready status" role="status" aria-live="polite" data-v-1747672a><span class="status-dot" data-v-1747672a></span> Waiting to validate.</div><div class="schema-grid" data-v-1747672a><div class="panel" data-v-1747672a><div class="panel-head" data-v-1747672a><div class="panel-head-left" data-v-1747672a><span data-v-1747672a>JSON Schema</span><small data-v-1747672a>31 lines · 513 characters</small><span class="transform-chip" data-v-1747672a>Detected JSON</span></div><div class="panel-head-right" data-v-1747672a><select class="format-select" aria-label="Input format" data-v-1747672a><option value="auto" data-v-1747672a selected>Auto-detect</option><option value="json" data-v-1747672a>JSON</option><option value="yaml" data-v-1747672a>YAML</option></select><button class="mini-btn" type="button" data-v-1747672a>Import file</button><input class="file-input" type="file" accept=".json,.yaml,.yml,.txt,text/plain,application/json" data-v-1747672a></div></div><div class="editor-body" data-v-1747672a><div class="json-editor" style="--gutter-width:54px;--editor-line-height:24px;--editor-padding-y:18px;" data-v-1747672a data-v-903708b4><div class="gutter" aria-hidden="true" data-v-903708b4><div class="gutter-inner" style="transform:translateY(-0px);" data-v-903708b4><div style="height:0px;" data-v-903708b4></div><!--[--><span class="line-number" data-v-903708b4>1</span><span class="line-number" data-v-903708b4>2</span><span class="line-number" data-v-903708b4>3</span><span class="line-number" data-v-903708b4>4</span><span class="line-number" data-v-903708b4>5</span><span class="line-number" data-v-903708b4>6</span><span class="line-number" data-v-903708b4>7</span><!--]--><div style="height:576px;" data-v-903708b4></div></div></div><div class="editor-area" data-v-903708b4><!----><textarea placeholder="Paste a JSON Schema here..." aria-label="JSON Schema input" aria-invalid="false" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" wrap="off" data-v-903708b4>{
+  &quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;required&quot;: [
+    &quot;id&quot;,
+    &quot;name&quot;,
+    &quot;email&quot;
+  ],
+  &quot;properties&quot;: {
+    &quot;id&quot;: {
+      &quot;type&quot;: &quot;integer&quot;,
+      &quot;minimum&quot;: 1
+    },
+    &quot;name&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;minLength&quot;: 2
+    },
+    &quot;email&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;format&quot;: &quot;email&quot;
+    },
+    &quot;tags&quot;: {
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;uniqueItems&quot;: true
+    }
+  },
+  &quot;additionalProperties&quot;: false
+}</textarea></div><!----></div></div><!----></div><div class="panel" data-v-1747672a><div class="panel-head" data-v-1747672a><div class="panel-head-left" data-v-1747672a><span data-v-1747672a>JSON data</span><small data-v-1747672a>9 lines · 107 characters</small><span class="transform-chip" data-v-1747672a>Detected JSON</span></div><div class="panel-head-right" data-v-1747672a><select class="format-select" aria-label="Input format" data-v-1747672a><option value="auto" data-v-1747672a selected>Auto-detect</option><option value="json" data-v-1747672a>JSON</option><option value="yaml" data-v-1747672a>YAML</option><option value="xml" data-v-1747672a>XML</option><option value="csv" data-v-1747672a>CSV</option><option value="tsv" data-v-1747672a>TSV</option><option value="jsonl" data-v-1747672a>JSONL</option></select><button class="mini-btn" type="button" data-v-1747672a>Import file</button><input class="file-input" type="file" accept=".json,.yaml,.yml,.xml,.csv,.tsv,.jsonl,.ndjson,.txt,text/plain,application/json,application/xml,application/x-ndjson" data-v-1747672a></div></div><div class="editor-body" data-v-1747672a><div class="json-editor" style="--gutter-width:54px;--editor-line-height:24px;--editor-padding-y:18px;" data-v-1747672a data-v-903708b4><div class="gutter" aria-hidden="true" data-v-903708b4><div class="gutter-inner" style="transform:translateY(-0px);" data-v-903708b4><div style="height:0px;" data-v-903708b4></div><!--[--><span class="line-number" data-v-903708b4>1</span><span class="line-number" data-v-903708b4>2</span><span class="line-number" data-v-903708b4>3</span><span class="line-number" data-v-903708b4>4</span><span class="line-number" data-v-903708b4>5</span><span class="line-number" data-v-903708b4>6</span><span class="line-number" data-v-903708b4>7</span><!--]--><div style="height:48px;" data-v-903708b4></div></div></div><div class="editor-area" data-v-903708b4><!----><textarea placeholder="Paste the JSON data to validate here..." aria-label="JSON data input" aria-invalid="false" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" wrap="off" data-v-903708b4>{
+  &quot;id&quot;: 1,
+  &quot;name&quot;: &quot;Alice&quot;,
+  &quot;email&quot;: &quot;alice@example.com&quot;,
+  &quot;tags&quot;: [
+    &quot;admin&quot;,
+    &quot;editor&quot;
+  ]
+}</textarea></div><!----></div></div><!----></div></div><section class="result-panel" data-v-1747672a><div class="result-head" data-v-1747672a><div class="result-head-left" data-v-1747672a><h2 data-v-1747672a>Validation results</h2><!----><!----></div><span class="status-inline" data-v-1747672a>Validation runs locally in your browser</span></div><div class="result-empty" data-v-1747672a>Enter a schema and data to validate automatically.</div></section></section><div class="adsense-container" data-v-1747672a data-v-a0e11c77><!-- webtools横向自适应广告单元 --><ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-7286632197002340" data-ad-slot="3441481088" data-ad-format="auto" data-full-width-responsive="true" data-v-a0e11c77></ins></div><article class="tool-guide" lang="en" aria-label="Validate JSON with JSON Schema Online" data-v-1747672a data-v-5d38c749><h2 data-v-5d38c749>Validate JSON with JSON Schema Online</h2><p data-v-5d38c749>Check JSON data against a JSON Schema and review validation errors by instance path. Schemas and data are parsed and validated locally in your browser.</p><!--[--><section data-v-5d38c749><h3 data-v-5d38c749>How to Validate JSON</h3><!--[--><!--]--><ol data-v-5d38c749><!--[--><li data-v-5d38c749>Paste or import a JSON Schema on the left and the JSON data on the right.</li><li data-v-5d38c749>Keep Auto-detect or choose the input format; JSON, YAML, XML, CSV, TSV and JSONL are accepted for the instance.</li><li data-v-5d38c749>Select Validate, or wait for the automatic check, then review each error path and keyword.</li><!--]--></ol><!----></section><section data-v-5d38c749><h3 data-v-5d38c749>Supported Keywords</h3><!--[--><p data-v-5d38c749>Draft 2020-12 is supported, including type, required, properties, additionalProperties, items, prefixItems, enum, const, anyOf, oneOf, allOf and $ref. Formats such as date-time, email, uri, ipv4 and uuid are checked when present.</p><p data-v-5d38c749>Most Draft-07 schemas also validate because unknown keywords are ignored. Keywords whose semantics changed between drafts, such as dependencies or exclusiveMinimum, may behave differently.</p><!--]--><!----><!----></section><section data-v-5d38c749><h3 data-v-5d38c749>Reading Validation Errors</h3><!--[--><p data-v-5d38c749>Each error shows its JSONPath, the failing keyword and the schema location. Click the path to copy it, or copy the whole error list as JSON.</p><p data-v-5d38c749>The on-screen list is capped to keep the page responsive; copying errors includes the full list.</p><!--]--><!----><!----></section><!--]--><section data-v-5d38c749><h3 data-v-5d38c749>Frequently Asked Questions</h3><!--[--><div class="guide-answer" data-v-5d38c749><h4 data-v-5d38c749>Is my schema or data uploaded?</h4><p data-v-5d38c749>No. Parsing and validation run in your browser with a bundled JSON Schema validator.</p></div><div class="guide-answer" data-v-5d38c749><h4 data-v-5d38c749>Which JSON Schema drafts are supported?</h4><p data-v-5d38c749>Draft 2020-12 is fully supported. Most Draft-07 schemas work as well, but draft-specific keyword semantics may differ.</p></div><div class="guide-answer" data-v-5d38c749><h4 data-v-5d38c749>Why does an empty JSONPath appear?</h4><p data-v-5d38c749>An empty path means the error applies to the whole instance, such as a missing required field or a disallowed extra property.</p></div><!--]--></section><nav aria-label="Related tools" data-v-5d38c749><h3 data-v-5d38c749>Related Tools</h3><ul data-v-5d38c749><!--[--><li data-v-5d38c749><a href="/json/" data-v-5d38c749>JSON Formatter and JSONPath Query</a></li><li data-v-5d38c749><a href="/jsondiff/" data-v-5d38c749>JSON Diff and Compare</a></li><!--]--></ul></nav><section data-v-5d38c749><h3 data-v-5d38c749>Technical References</h3><ul data-v-5d38c749><!--[--><li data-v-5d38c749><a href="https://json-schema.org/draft/2020-12" data-v-5d38c749>JSON Schema Draft 2020-12</a></li><li data-v-5d38c749><a href="https://ajv.js.org/" data-v-5d38c749>Ajv JSON Schema Validator</a></li><!--]--></ul></section></article><!--]--></main><footer class="footer" data-v-583da092>© RustFisher MiniTools. All rights reserved.</footer></div></div>
+  </body>
+</html>

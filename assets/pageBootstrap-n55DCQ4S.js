@@ -1,2 +1,0 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./commandPaletteBoot-2TomNJg2.js","./main-BW4NsV8y.js","./main-CEpRruTW.css","./tools-BbPnohlQ.js","./commandPaletteBoot-BTwAwrzE.css"])))=>i.map(i=>d[i]);
-import{l as e,n as t}from"./main-BW4NsV8y.js";function n(n){e(n).mount(`#app`),t(async()=>{let{installCommandPalette:e}=await import(`./commandPaletteBoot-2TomNJg2.js`);return{installCommandPalette:e}},__vite__mapDeps([0,1,2,3,4]),import.meta.url).then(({installCommandPalette:e})=>e()).catch(()=>{})}export{n as t};
